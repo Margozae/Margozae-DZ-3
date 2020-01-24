@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var height = +prompt('Введите число', '3');
+        var triangle = "";
+        var star = ""; 
+        var space = " ";
+
+        for (var i = 1; i<height; i++) {
+            star += "*";
+            triangle += '\n' + space.repeat(height-i) + star;  
+        }
+
+        alert(triangle);
+
+    </script>
+</body>
+</html>
